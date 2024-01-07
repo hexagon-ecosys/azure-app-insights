@@ -1,0 +1,15 @@
+{
+  "connectionString": "<set connection string here>",
+  "role": {
+    "name": "<set role name here>",
+    "instance": "<set instance name here>"
+  },
+  "instrumentation": {
+    "logging": {
+      "level": "ALL"
+    }
+  },
+  "preview": {
+    "generalExportQueueCapacity": 65536
+  }
+}

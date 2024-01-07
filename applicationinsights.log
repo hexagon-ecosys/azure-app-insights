@@ -1,0 +1,2 @@
+2024-01-07 14:09:44.659-05:00 INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.4.18 started successfully (PID 48094, JVM running for 1.937 s)
+2024-01-07 14:09:44.663-05:00 INFO  c.m.applicationinsights.agent - Java version: 21.0.1, vendor: Eclipse Adoptium, home: /Users/rvadakkan/DEV-Tools/jdk-21.0.1+12/Contents/Home
