@@ -1,13 +1,13 @@
-*src/main/java/com/hexagonali/appinsights/AzureAppInsightsTest.java* contains **main**
-
-main accepts 1 parameter whose value can be -
+Performance testing rig for Azure Application Insights
+---
+*src/main/java/com/hexagonali/appinsights/AzureAppInsightsTest.java* contains **main**. It accepts just one parameter whose value can be -
 
  - 0 (default)
  - 1
  - 2
  - 3
 
-These correspond to the following 4 'run' modes -
+These correspond to the following 4 'test modes' -
 
  - 0: Single-threaded with short messages
  - 1: Single-threaded with long messages
@@ -15,11 +15,18 @@ These correspond to the following 4 'run' modes -
  - 3: Multi-threaded with long messages
 
 ---
-Relevant test parameters can be controlled from *src/main/java/com/hexagonali/appinsights/TestParameters.java* -
+The relevant test parameters can be controlled from *src/main/java/com/hexagonali/appinsights/TestParameters.java* -
 
- - max length of 'short' and 'long' messages
- - max number of threads total
- - number of messages (across all threads)
+ - the max length of 'short' and 'long' messages
+ - the max number of threads
+ - the total number of messages (across all threads)
+
+The default values for these are -
+
+ - max length of short messages: 500 characters
+ - max length of long messages: 20000 characters
+ - max number of threads: 20
+ - total number of messages: 20000
 
 ---
 **Configure applicationinsights.json properly to send logs to Azure.**
